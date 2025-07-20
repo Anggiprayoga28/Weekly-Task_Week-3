@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 13</title>
+    <link rel="stylesheet" href="Style/halaman13.css">
+
+</head>
+<body>
+<header>
+      <nav class="navbar">
+   
+        <div class="navbar-brand">
+          <a href="halaman3.html">
+            <img
+              class="logo-color"
+              src="/asset/icon/tickitz-blu.svg"
+              alt="logo-tickitz"
+            />
+          </a>
+        </div>
+
+        
+        <div class="navbar-menu">
+          <ul>
+            <li><a href="halaman3.html">Home</a></li>
+            <li><a href="halaman4.html">Movie</a></li>
+            <li><a href="halaman5.html">Buy Ticket</a></li>
+          </ul>
+        </div>  
+
+        
+        <div class="navbar-auth">
+          <select name="location" id="location" class="location-select">
+            <option value="Location">Location</option>
+          </select>
+          <img
+            src="/asset/icon/Search.svg"
+            alt="search-dash-icon"
+          />
+          <img
+            src="/asset/img/slamet.png"
+            alt="profile-dash"
+          />
+        </div>
+
+        
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+          <div class="navbar-brand">
+            <a href="halaman3.html">
+              <img
+                src="/asset/icon/logo Tickitz.png"
+                alt="logo-tickitz"
+              />
+            </a>
+          </div>
+          <button class="close-menu" id="close-menu">×</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- profile -->
+      <div class="profile-container">
+        <!-- left sidebar -->
+        <aside class="sidebar">
+          <div class="info-header">
+            <h2>INFO</h2>
+            <div class="menu-dots">
+              <img src="/asset/icon/Group.svg" alt="dots icon" />
+            </div>
+          </div>
+
+          <div class="user-profile">
+            <img
+              class="profile-sidebar"
+              src="/asset/img/slamet.png"
+              alt="profile-sidebar"
+            />
+
+            <h3 class="user-name">Slamet El Rodriguez</h3>
+            <p class="user-role">Moviegoers</p>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="loyalty-card">
+                <div class="loyalty-title">
+                    <span>Moviegoers</span>
+                      <div class="star-icon">
+                        <img src="asset/icon/eva_star-fill.svg" alt="">
+                    </div>
+                </div>
+                <div class="points">320 <span>points</span></div>
+            </div>
+                <div class="progress-section">
+                    <div class="progress-text">180 points become a master</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill">
+                        </div>
+                    </div>
+                </div>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="main-content">
+          <!-- Tabs Navigation -->
+          <nav class="tabs">
+            <a href="#" class="tab">Account Settings</a>
+            <a href="#" class="tab active">Order History</a>
+          </nav>
+
+          <!-- Order History List -->
+          <div class="order-list">
+            <!-- Order 1 -->
+            <article class="order-card">
+              <div class="order-details">
+                <div class="order-info">
+                  <p class="order-date">Tuesday, 07 July 2020 - 04:30pm</p>
+                  <h3 class="movie-title">Spider-Man: Homecoming</h3>
+                </div>
+
+                <img
+                  class="cinema-logo"
+                  src="/asset/sponsor/CineOne21 2.svg"
+                  alt="cineone 21"
+                />
+              </div>
+
+              <hr class="order-divider" />
+
+              <div class="order-actions">
+                <div class="status-badges">
+                  <span class="badge active">Ticket in active</span>
+                  <span class="badge not-paid">Not Paid</span>
+                </div>
+
+                <select
+                  name="showdetails"
+                  id="showdetails"
+                  class="details-toggle"
+                >
+                  <option>Show Details</option>
+                </select>
+              </div>
+            </article>
+
+            <article class="order-card">
+              <div class="order-details">
+                <div class="order-info">
+                  <p class="order-date">Monday, 14 June 2020 - 02:00pm</p>
+                  <h3 class="movie-title">Avengers: End Game</h3>
+                </div>
+
+                <img
+                  class="cinema-logo"
+                  src="/asset/sponsor/ebv.id 2.svg"
+                  alt="ebv.id"
+                />
+              </div>
+
+              <hr class="order-divider" />
+               <div class="order-actions">
+                <div class="status-badges">
+                  <span class="badge used">Ticket Used</span>
+                  <span class="badge paid">Paid</span>
+                </div>
+
+                <select
+                  name="showdetails"
+                  id="showdetails"
+                  class="details-toggle"
+                >
+                  <option>Show Details</option>
+                </select>
+              </div>
+
+              <div class="ticket-details">
+                <div class="qr-code"></div>
+                  <div class="ticket-info">
+                    <div class="info-row">
+                        <div class="info-column">
+                            <p class="info-label">Movie</p>
+                            <p class="info-value">Spider-Man: ...</p>
+                        </div>
+                        <div class="info-column">
+                            <p class="info-label">Category</p>
+                            <p class="info-value">PG-13</p>
+                        </div>
+                      </div>
+
+                      <div class="info-row">
+                        <div class="info-column">
+                            <p class="info-label">Date</p>
+                            <p class="info-value">07 Jul</p>
+                          </div>
+                          <div class="info-column">
+                            <p class="info-label">Time</p>
+                            <p class="info-value">2:00pm</p>
+                          </div>
+                    </div>
+
+                    <div class="info-row">
+                        <div class="info-column">
+                            <p class="info-label">Count</p>
+                            <p class="info-value">3 pcs</p>
+                        </div>
+                        <div class="info-column">
+                            <p class="info-label">Seats</p>
+                            <p class="info-value">C4, C5, C6</p>
+                        </div>
+                    </div>
+
+                    <div class="total-row">
+                        <p class="total-label">Total</p>
+                        <p class="total-value">$30.00</p>
+                    </div>
+                </div>
+            </div>
+              
+            </article>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
