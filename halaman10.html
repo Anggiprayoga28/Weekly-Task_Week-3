@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 10</title>
+    <link rel="stylesheet" href="Style/halaman10.css">
+</head>
+<body>
+<header>
+      <nav class="navbar">
+   
+        <div class="navbar-brand">
+          <a href="halaman3.html">
+            <img
+              class="logo-color"
+              src="/asset/icon/tickitz-blu.svg"
+              alt="logo-tickitz"
+            />
+          </a>
+        </div>
+
+        
+        <div class="navbar-menu">
+          <ul>
+            <li><a href="halaman3.html">Home</a></li>
+            <li><a href="halaman4.html">Movie</a></li>
+            <li><a href="halaman5.html">Buy Ticket</a></li>
+          </ul>
+        </div>  
+
+        
+        <div class="navbar-auth">
+          <select name="location" id="location" class="location-select">
+            <option value="Location">Location</option>
+          </select>
+          <img
+            src="/asset/icon/Search.svg"
+            alt="search-dash-icon"
+          />
+          <img
+            src="/asset/img/slamet.png"
+            alt="profile-dash"
+          />
+        </div>
+
+        
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      </div>
+    </header>
+
+    <div class="main-container">
+             <aside class="sidebar">
+          <div class="info-header">
+            <h2>INFO</h2>
+            <div class="menu-dots">
+              <img src="/asset/icon/Group.svg" alt="dots icon" />
+            </div>
+          </div>
+
+          <div class="user-profile">
+            <img
+              class="profile-sidebar"
+              src="/asset/img/slamet.png"
+              alt="profile-sidebar"
+            />
+
+            <h3 class="user-name">Slamet El Rodriguez</h3>
+            <p class="user-role">Moviegoers</p>
+          </div>
+
+          <hr class="divider" />
+
+          <div class="loyalty-card">
+                <div class="loyalty-title">
+                    <span>Moviegoers</span>
+                      <div class="star-icon">
+                        <img src="asset/icon/eva_star-fill.svg" alt="">
+                    </div>
+                </div>
+                <div class="points">320 <span>points</span></div>
+            </div>
+                <div class="progress-section">
+                    <div class="progress-text">180 points become a master</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill">
+                        </div>
+                    </div>
+                </div>
+        </aside>
+
+        <main class="content-area">
+            <div class="tabs">
+                <a href="#" class="tab active">Account Settings</a>
+                <a href="#" class="tab">Order History</a>
+            </div>
+
+            <section class="detail-wrapper">
+                <h2 class="section-title">Details Information</h2>
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" value="Slamet" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" value="El Rodriguez" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" value="slamet.ganteng123@gmail.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <div class="phone-input">
+                            <input type="text" class="country-code" value="+62" />
+                            <input type="tel" id="phone" value="81445687121" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="password-section">
+                <h2 class="section-title">Account and Privacy</h2>
+                
+                <div class="password-grid">
+                    <div class="form-group">
+                        <label for="newPassword">New Password</label>
+                        <div class="password-input">
+                            <input type="password" id="newPassword" placeholder="Write your password" />
+                            <button class="toggle-password"></button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" placeholder="Confirm your password" />
+                            <button class="toggle-password"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <button class="update-btn">Update changes</button>
+    </div>
+</body>
+</html>
