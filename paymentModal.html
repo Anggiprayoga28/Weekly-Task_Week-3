@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman 7</title>
-    <link rel="stylesheet" href="Style/halaman7.css">
-</head>
-<body>
-      <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman 8</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style/paymentModal.css" />
+  </head>
+  <body>
+          <header>
       <nav class="navbar">
         <div class="navbar-brand">
           <a href="/index.html">
@@ -39,8 +49,7 @@
         </div>
       </nav>
     </header>
-
-    <div class="container">
+  <div class="container">
         <!-- Progress Steps -->
         <div class="progress-container">
             <div class="progress-step completed">
@@ -152,55 +161,114 @@
             </div>
 
             <!-- Pay Button -->
-            <button class="pay-button">Pay your order</button>
+            <a href="halaman8.html"><button class="pay-button">Pay your order</button></a>
+
         </div>
+
+    <div class="container-payment">
+      <div class="payment-card">
+        <header class="payment-header">
+          <h1>Payment Info</h1>
+        </header>
+
+        <section class="payment-details">
+          <div class="payment-field">
+            <span class="payment-label">No. Rekening Virtual :</span>
+            <div class="account-number-container">
+              <span class="payment-value">12321328913829724</span>
+              <button class="copy-button">Copy</button>
+            </div>
+          </div>
+
+          <div class="payment-field">
+            <span class="payment-label">Total Payment :</span>
+            <span class="payment-value amount">$30</span>
+          </div>
+
+          <p class="payment-notice">
+            Pay this payment bill before it is due,
+            <span class="due-date">on June 23, 2023</span>. If the bill has not
+            been paid by the specified time, it will be forfeited
+          </p>
+
+          <div class="action-buttons">
+            <button class="check-payment-button"><a href="halaman9.html">Check Payment</a></button>
+            <button class="pay-later-button">Pay Later</button>
+          </div>
+        </section>
+      </div>
+
     </div>
+ </div>
 
+  
+        <footer>
+          <div class="footer-container">
+            <section class="footer-section">
+              <div class="logo">
+                <img
+                  src="/asset/icon/tickitz-blu.svg"
+                  alt="tickitz footer"
+                />
+              </div>
+              <p class="tagline">
+                Stop waiting in line. Buy tickets conveniently, watch movies
+                quietly.
+              </p>
+            </section>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-logo">
-                    <img src="asset/icon/tickitz-blu.svg" alt="logo tickitz">
-                </div>
-                <p class="footer-description">Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Explore</h3>
-                <ul>
-                    <li><a href="#">Cinemas</a></li>
-                    <li><a href="#">Movies List</a></li>
-                    <li><a href="#">My Ticket</a></li>
-                    <li><a href="#">Notification</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Our Sponsor</h3>
-                <div class="ebv-logo">
-                    <img src="/asset/sponsor/ebv.id 2.svg" alt="Logo ebv">
-                </div>
-                <div class="cineone21-logo">
-                    <img src="/asset/sponsor/CineOne21 2.svg" alt="CineOne21">
-                </div>
-                <div>
-                    <img src="/asset/sponsor/hiflix 2.svg" alt="hiflix">
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>Follow us</h3>
-                <ul>
-                    <li><img src="asset/icon/eva_facebook-outline.svg" alt="facebook">Tickitz Cinema id</li>
-                    <li><img src="asset/icon/bx_bxl-instagram.svg" alt="instagram">tickitz.id</li>
-                    <li><img src="asset/icon/eva_twitter-outline.svg" alt="twitter">tickitz.id</li>
-                    <li><img src="asset/icon/feather_youtube.svg" alt="youtube">Tickitz Cinema Id</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2020 Tickitz. All Rights Reserved.</p>
-        </div>
-    </footer>
+            <section class="footer-section">
+              <h3>Explore</h3>
+              <nav class="nav-links">
+                <a href="#">Cinemas</a>
+                <a href="#">Movies List</a>
+                <a href="#">My Ticket</a>
+                <a href="#">Notification</a>
+              </nav>
+            </section>
 
-    
-</body>
+            <section class="footer-section">
+              <h3>Our Sponsor</h3>
+              <div class="sponsors">
+                <div class="sponsor-logo">
+                  <img src="/asset/sponsor/ebv.id 2.svg" alt="ebu-id" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="/asset/sponsor/CineOne21 2.svg" alt="cineone" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="/asset/sponsor/hiflix 2.svg" alt="hiflix" />
+                </div>
+              </div>
+            </section>
+
+            <section class="footer-section">
+              <h3>Follow us</h3>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <img src="/asset/icon/eva_facebook-outline.svg" alt="facebook" />
+                  Tickitz Cinema id
+                </a>
+                <a href="#" class="social-link">
+                  <img
+                    src="/asset/icon/bx_bxl-instagram.svg"
+                    alt="instagram"
+                  />
+                  tickitz.id
+                </a>
+                <a href="#" class="social-link">
+                  <img src="/asset/icon/eva_twitter-outline.svg" alt="twitter" />
+                  tickitz.id
+                </a>
+                <a href="#" class="social-link">
+                  <img src="/asset/icon/feather_youtube.svg" alt="youtube" />
+                  Tickitz Cinema id
+                </a>
+              </div>
+            </section>
+          </div>
+          <div class="copyright">© 2020 Tickitz. All Rights Reserved.</div>
+        </footer>
+   
+  </body>
 </html>

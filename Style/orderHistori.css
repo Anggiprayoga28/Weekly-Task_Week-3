@@ -449,13 +449,6 @@ header:nth-of-type(1) {
   align-self: center;
 }
 
-.order-info .cinema-logo {
-  width: 100px;
-  height: 40px;
-  border-radius: 4px;
-  align-self: center;
-}
-
 .order-divider {
   border: none;
   height: 1px;
@@ -536,108 +529,130 @@ header:nth-of-type(1) {
   cursor: pointer;
 }
 
-/* Ticket Details */
-.ticket-details {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 1rem;
-    align-items: center;
-    margin-top: 1rem;
-    padding: 1rem;
-    background: #f8f9fa;
-    border-radius: 8px;
+.chevron-icon {
+  width: 16px;
+  height: 16px;
+  /* Placeholder for chevron icon */
+  background-color: #f0f0f0;
+  border-radius: 50%;
 }
 
-.qr-code {
-    width: 80px;
-    height: 80px;
-    background: url(/asset/icon/qrcode.png) center/cover;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.ticket-info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-.info-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.info-label {
-    font-size: 0.8rem;
-    color: #666;
-    margin-bottom: 0.2rem;
-}
-
-.info-value {.ticket-info {
-  padding: 24px 20px;
-}
-
-.info-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.info-column {
-  flex: 1;
-}
-
-.info-label {
-  font-size: 12px;
-  color: #9e9e9e;
-  margin-bottom: 4px;
-  font-weight: 400;
-}
-
-.info-value {
-  font-size: 14px;
-  font-weight: 500;
-  color: #333;
-}
-
-.total-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 0;
-  border-top: 1px solid #f0f0f0;
-  margin-top: 4px;
-}
-
-.total-label {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.total-value {
-  font-size: 14px;
-  font-weight: 600;
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-        padding: 0 1rem;
-    }
+  .profile-container {
+    grid-template-columns: 1fr;
+  }
 
-    .header {
-        padding: 1rem;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .ticket-info {
-        grid-template-columns: 1fr;
-    }
+  .sidebar {
+    margin-bottom: 20px;
+  }
 }
 
+/* Footer */
 
+footer {
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 5%;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+  min-width: 200px;
+  flex: 1 1 200px;
+}
+
+.logo img {
+  max-width: 130px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  color: #6e7191;
+  line-height: 1.6;
+  max-width: 250px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #6e7191;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--blue-primary);
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sponsor-logo {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #6e7191;
+}
+
+.social-link:hover {
+  color: var(--blue-primary);
+}
+
+.social-link img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+}
+
+.social-link:hover img {
+  transform: scale(1.2);
+}
+
+.copyright {
+  text-align: center;
+  color: #6e7191;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Mobile Menu Styles */
 .mobile-menu {
   display: none;
   position: fixed;
@@ -787,7 +802,7 @@ header:nth-of-type(1) {
 
   /* Mobile menu improvements */
   .navbar-brand img {
-    content: url("/asset/icon/tickitz-blu.svg");
+    content: url(/asset/icon/tickitz-blu.svg);
   }
 
   .navbar-menu,
@@ -797,11 +812,47 @@ header:nth-of-type(1) {
 
   .hamburger-menu {
     display: flex;
-    content: url("/assets/images/icons/gg_menu-right-alt.svg");
+    content: url(/asset/icon/gg_menu-right-alt.svg);
   }
 
   .mobile-menu {
     display: flex;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .profile-container {
+    gap: 15px;
+  }
+
+  .movie-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .order-card {
+    padding: 12px;
+  }
+
+  .user-profile .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .loyalty-card {
+    padding: 12px;
+  }
+
+  .points-value {
+    font-size: 24px;
+  }
+
+  /* Footer improvements for very small screens */
+  .footer-container {
+    padding: 20px 15px;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
 }
