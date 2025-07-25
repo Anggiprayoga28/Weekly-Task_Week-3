@@ -1,11 +1,11 @@
 :root {
-  --white: #fff;
-  --Neutral-Gray-900: #0f172a;
-  --Neutral-Gray-50: #f8fafc;
-  --blue-primary: #1d4ed8;
-  --blue-secondary: #2563eb;
-  --text-dark: #121212;
-  --text-gray: #a0a3bd;
+    --white: #fff;
+    --Neutral-Gray-900: #0f172a;
+    --Neutral-Gray-50: #f8fafc;
+    --blue-primary: #1d4ed8;
+    --blue-secondary: #2563eb;
+    --text-dark: #121212;
+    --text-gray: #a0a3bd;
 }
 
 * {
@@ -21,123 +21,123 @@ body {
 }
 
 header:nth-of-type(1) {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 5%;
-  border-bottom: 1px solid #dedede;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #dedede;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--white);
 }
 
 .navbar-brand {
-  flex: 1;
-  max-width: 130px;
+    flex: 1;
+    max-width: 130px;
 }
 
 .navbar-brand a {
-  text-decoration: none;
-  display: block;
+    text-decoration: none;
+    display: block;
 }
 
 .navbar-brand img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .navbar-menu {
-  flex: 4;
-  display: flex;
-  justify-content: center;
+    flex: 4;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar-menu ul {
-  display: flex;
-  list-style: none;
-  gap: 2.5rem;
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
 }
 
 .navbar-menu a {
-  text-decoration: none;
-  color: var(--Neutral-Gray-900);
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
-  position: relative;
+    text-decoration: none;
+    color: var(--Neutral-Gray-900);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
 }
 
 .navbar-menu a:hover {
-  color: var(--blue-primary);
+    color: var(--blue-primary);
 }
 
 .navbar-menu a:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background-color: var(--blue-primary);
-  transition: width 0.3s ease;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--blue-primary);
+    transition: width 0.3s ease;
 }
 
 .navbar-menu a:hover:after {
-  width: 100%;
+    width: 100%;
 }
 
 .navbar-auth {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  gap: 12px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
 }
 
 
 .btn {
-  padding: 12px 18px;
-  border-radius: 4px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s;
-  cursor: pointer;
-  text-align: center;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: center;
 }
 
 .btn-outline {
-  border-radius: 5px;
-  border: 1px solid var(--blue-primary);
-  background: transparent;
-  color: var(--blue-primary);
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.75px;
+    border-radius: 5px;
+    border: 1px solid var(--blue-primary);
+    background: transparent;
+    color: var(--blue-primary);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
 }
 
 .btn-outline:hover {
-  background: rgba(29, 78, 216, 0.1);
+    background: rgba(29, 78, 216, 0.1);
 }
 
 .btn-primary {
-  background-color: var(--blue-primary);
-  border-radius: 5px;
-  color: var(--Neutral-Gray-50);
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.75px;
-  border: 1px solid var(--blue-primary);
+    background-color: var(--blue-primary);
+    border-radius: 5px;
+    color: var(--Neutral-Gray-50);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    border: 1px solid var(--blue-primary);
 }
 
 .btn-primary:hover {
-  background-color: #1642b8;
+    background-color: #1642b8;
 }
 
 .main-content {
@@ -179,9 +179,9 @@ header:nth-of-type(1) {
 }
 
 .logo {
-  img{
-    width: 250px;
-  }
+    img {
+        width: 250px;
+    }
 }
 
 
@@ -250,10 +250,11 @@ header:nth-of-type(1) {
     border: 2px solid #e2e8f0;
     border-radius: 8px;
 }
-.dot-wrapper{
-position: relative;
-display: flex;
-justify-content: space-between;
+
+.dot-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .dot {
@@ -264,13 +265,13 @@ justify-content: space-between;
 
 }
 
-.dot-1{
+.dot-1 {
     position: absolute;
     top: -13px;
     left: -35px;
 }
 
-.dot-2{
+.dot-2 {
     position: absolute;
     right: -35px;
     top: -13px;
@@ -315,7 +316,7 @@ justify-content: space-between;
 .total-row {
     margin-top: 30px;
     padding: 20px;
-    border: 2px solid #dedede ;
+    border: 2px solid #dedede;
     display: flex;
     width: 100%;
     align-items: center;
