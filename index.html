@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman3</title>
-    <link rel="stylesheet" href="/Style/index.css">
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="auth.js"></script>
 </head>
 <body>
-     <header>
+    <header>
       <nav class="navbar">
+   
         <div class="navbar-brand">
-          <a href="/index.html">
+          <a href="index.html">
             <img
               class="logo-color"
               src="/asset/icon/tickitz-blu.svg"
@@ -19,27 +22,54 @@
           </a>
         </div>
 
+        
         <div class="navbar-menu">
           <ul>
-            <li><a href="halaman3.html">Home</a></li>
-            <li><a href="halaman4.html">Movie</a></li>
-            <li><a href="halaman5.html">Buy Ticket</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Movie</a></li>
+            <li><a href="detail.html">Buy Ticket</a></li>
           </ul>
+        </div>  
+
+        <!-- UPDATED: Header akan diupdate otomatis oleh auth.js -->
+        <div class="navbar-auth">
+          <!-- Ini akan diisi otomatis oleh JavaScript berdasarkan status login -->
+          <a href="login.html" class="btn btn-outline">Sign in</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
         </div>
 
-
-        <div class="navbar-auth">
-          <a href="halaman2.html" class="btn btn-outline">Sign in</a>
-          <a href="login.html" class="btn btn-primary">Sign Up</a>
-
+        
         <div class="hamburger-menu" id="hamburger-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span><a href="index.html"></a></span>
+          <span><a href="home.html"></a></span>
+          <span><a href="detail.html"></a></span>
         </div>
       </nav>
-    </header>
 
+      
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+          <div class="navbar-brand">
+            <a href="/home.html">
+              <img
+                src="/asset/icon/logo Tickitz.png"
+                alt="logo-tickitz"
+              />
+            </a>
+          </div>
+          <button class="close-menu" id="close-menu">×</button>
+        </div>
+        <div class="mobile-menu-items">
+          <a href="index.html">Home</a>
+          <a href="home.html">Movie</a>
+          <a href="detail.html">Buy Ticket</a>
+        </div>
+        <div class="mobile-auth">
+          <a href="login.html" class="btn btn-outline">Sign in</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+        </div>
+      </div>
+    </header>
     
     <main class="main-content">
         
@@ -91,10 +121,12 @@
                     <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
                 </div>
                 <div class="feature-item">
+                    <div class="feature-icon">
                     <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <ellipse cx="26.9756" cy="27" rx="26.9756" ry="27" fill="#1D4ED8" fill-opacity="0.2"/>
                       <path d="M17.5252 16C16.1363 16 15 17.0438 15 18.3195V32.2362L18.7878 28.757H30.1511C31.5399 28.757 32.6762 27.7132 32.6762 26.4375V18.3195C32.6762 17.0438 31.5399 16 30.1511 16H17.5252ZM35.2014 21.7986V26.4375C35.2014 28.9959 32.9363 31.0764 30.1511 31.0764H22.5755V32.2362C22.5755 33.5119 23.7119 34.5556 25.1007 34.5556H36.464L40.2518 38.0348V24.1181C40.2518 22.8424 39.1154 21.7986 37.7266 21.7986H35.2014Z" fill="#1D4ED8"/>
                     </svg>
+                    </div>
                     <h3 class="feature-title">24/7 Customer Support</h3>
                     <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
                 </div>
