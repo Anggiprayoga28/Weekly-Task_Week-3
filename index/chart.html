@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickitz Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="/javascript/chart.js"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <div class="bg-white border-b border-gray-200 px-8 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-blue-500">Tickitz</div>
+        <div class="flex space-x-8">
+            <a href="#" class="text-blue-500 font-medium">Dashboard</a>
+            <a href="#" class="text-gray-600 font-medium">Movie</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span class="text-gray-600">Location ▼</span>
+            <div class="w-8 h-8 bg-blue-500 rounded-full"></div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto p-8">
+        <!-- Sales Chart Section -->
+        <div class="bg-white rounded-xl p-8 mb-8 shadow-lg">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl font-semibold text-gray-800">Sales Chart</h2>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <select id="movieSelect" class="bg-gray-100 border border-gray-300 rounded-md px-4 py-2 pr-8 text-sm text-gray-700 cursor-pointer appearance-none min-w-max">
+                            <option value="avengers">Avengers: End Game</option>
+                            <option value="spiderman">Spider-Man: No Way Home</option>
+                            <option value="batman">The Batman</option>
+                            <option value="topgun">Top Gun: Maverick</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-2 flex items-center pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <select id="periodSelect" class="bg-gray-100 border border-gray-300 rounded-md px-4 py-2 pr-8 text-sm text-gray-700 cursor-pointer appearance-none">
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-2 flex items-center pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <button onclick="updateChart()" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors">
+                        Filter
+                    </button>
+                </div>
+            </div>
+            <div class="text-gray-600 text-sm mb-4" id="movieInfo">Avengers: End Game</div>
+            <div class="relative h-72">
+                <canvas id="salesChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Ticket Sales Section -->
+        <div class="bg-white rounded-xl p-8 shadow-lg">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl font-semibold text-gray-800">Ticket Sales</h2>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <select id="categorySelect" class="bg-gray-100 border border-gray-300 rounded-md px-4 py-2 pr-8 text-sm text-gray-700 cursor-pointer appearance-none min-w-max">
+                            <option value="adventure">Adventure, Purwokerto</option>
+                            <option value="action">Action, Jakarta</option>
+                            <option value="drama">Drama, Bandung</option>
+                            <option value="comedy">Comedy, Surabaya</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-2 flex items-center pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <select id="locationSelect" class="bg-gray-100 border border-gray-300 rounded-md px-4 py-2 pr-8 text-sm text-gray-700 cursor-pointer appearance-none">
+                            <option value="purwokerto">Purwokerto</option>
+                            <option value="jakarta">Jakarta</option>
+                            <option value="bandung">Bandung</option>
+                            <option value="surabaya">Surabaya</option>
+                        </select>
+                        <div class="absolute inset-y-0 right-2 flex items-center pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <button onclick="updateTicketChart()" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors">
+                        Filter
+                    </button>
+                </div>
+            </div>
+            <div class="text-gray-600 text-sm mb-4" id="categoryInfo">Adventure, Purwokerto</div>
+            <div class="relative h-72">
+                <canvas id="ticketChart"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
