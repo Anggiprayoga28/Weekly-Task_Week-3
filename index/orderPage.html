@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="/Style/orderPage.css">
+</head>
+<body>
+      <header>
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <a href="/index/index.html">
+            <img
+              class="logo-color"
+              src="/asset/icon/tickitz-blu.svg"
+              alt="logo-tickitz"
+            />
+          </a>
+        </div>
+
+        <div class="navbar-menu">
+          <ul>
+            <li><a href="/index/index.html">Home</a></li>
+            <li><a href="/index/home.html">Movie</a></li>
+            <li><a href="/index/detail.html">Buy Ticket</a></li>
+          </ul>
+        </div>
+
+
+        <div class="navbar-auth">
+          <a href="/index/login.html" class="btn btn-outline">Sign in</a>
+          <a href="/index/register.html" class="btn btn-primary">Sign Up</a>
+
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+     <div class="progress-bar">
+            <div class="step-wrapper">
+                <div class="step-circle completed">✓</div>
+                <div class="step-text">Dates And Time</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-wrapper">
+                <div class="step-circle active">2</div>
+                <div class="step-text">Seat</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-wrapper">
+                <div class="step-circle inactive">3</div>
+                <div class="step-text">Payment</div>
+            </div>
+        </div>
+        
+    <div class="container">
+    
+        <div class="main-content">
+                <div class="movie-info">
+                    <div class="movie-poster"></div>
+                    <div class="movie-details">
+                        <h2>Spider-Man: Homecoming</h2>
+                        <div class="movie-genres">
+                            <span class="genre-tag">Action</span>
+                            <span class="genre-tag">Adventure</span>
+                        </div>
+                        <div class="showtime-info">
+                            <div class="showtime">Regular - 13:00 PM</div>
+                            <button class="change-btn">Change</button>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="seat-selection">
+                <h2>Choose Your Seat</h2>
+                
+                <div class="screen">Screen</div>
+                
+                <div class="seating-chart">
+                    <div class="row">
+                        <div class="row-label">A</div>
+                        <button class="seat seat-available" data-seat="A1"></button>
+                        <button class="seat seat-available" data-seat="A2"></button>
+                        <button class="seat seat-available" data-seat="A3"></button>
+                        <button class="seat seat-available" data-seat="A4"></button>
+                        <button class="seat seat-available" data-seat="A5"></button>
+                        <button class="seat seat-sold" data-seat="A6"></button>
+                        <button class="seat seat-available" data-seat="A7"></button>
+                        <div class="gap"></div>
+                        <button class="seat seat-available" data-seat="A8"></button>
+                        <button class="seat seat-available" data-seat="A9"></button>
+                        <button class="seat seat-available" data-seat="A10"></button>
+                        <button class="seat seat-available" data-seat="A11"></button>
+                        <button class="seat seat-sold" data-seat="A12"></button>
+                        <button class="seat seat-available" data-seat="A13"></button>
+                        <button class="seat seat-available" data-seat="A14"></button>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-label">B</div>
+                        <button class="seat seat-available" data-seat="B1"></button>
+                        <button class="seat seat-sold" data-seat="B2"></button>
+                        <button class="seat seat-sold" data-seat="B3"></button>
+                        <button class="seat seat-available" data-seat="B4"></button>
+                        <button class="seat seat-available" data-seat="B5"></button>
+                        <button class="seat seat-available" data-seat="B6"></button>
+                        <button class="seat seat-available" data-seat="B7"></button>
+                        <div class="gap"></div>
+                        <button class="seat seat-available" data-seat="B8"></button>
+                        <button class="seat seat-available" data-seat="B9"></button>
+                        <button class="seat seat-available" data-seat="B10"></button>
+                        <button class="seat seat-available" data-seat="B11"></button>
+                        <button class="seat seat-available" data-seat="B12"></button>
+                        <button class="seat seat-available" data-seat="B13"></button>
+                        <button class="seat seat-available" data-seat="B14"></button>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-label">C</div>
+                        <button class="seat seat-available" data-seat="C1"></button>
+                        <button class="seat seat-available" data-seat="C2"></button>
+                        <button class="seat seat-available" data-seat="C3"></button>
+                        <button class="seat seat-selected" data-seat="C4"></button>
+                        <button class="seat seat-selected" data-seat="C5"></button>
+                        <button class="seat seat-selected" data-seat="C6"></button>
+                        <button class="seat seat-available" data-seat="C7"></button>
+                        <div class="gap"></div>
+                        <button class="seat seat-available" data-seat="C8"></button>
+                        <button class="seat seat-sold" data-seat="C9"></button>
+                        <button class="seat seat-available" data-seat="C10"></button>
+                        <button class="seat seat-available" data-seat="C11"></button>
+                        <button class="seat seat-sold" data-seat="C12"></button>
+                        <button class="seat seat-available" data-seat="C13"></button>
+                        <button class="seat seat-available" data-seat="C14"></button>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-label">D</div>
+                        <button class="seat seat-available" data-seat="D1"></button>
+                        <button class="seat seat-sold" data-seat="D2"></button>
+                        <button class="seat seat-available" data-seat="D3"></button>
+                        <button class="seat seat-available" data-seat="D4"></button>
+                        <button class="seat seat-available" data-seat="D5"></button>
+                        <button class="seat seat-available" data-seat="D6"></button>
+                        <button class="seat seat-available" data-seat="D7"></button>
+                        <div class="gap"></div>
+                        <button class="seat seat-available" data-seat="D8"></button>
+                        <button class="seat seat-sold" data-seat="D9"></button>
+                        <button class="seat seat-available" data-seat="D10"></button>
+                        <button class="seat seat-available" data-seat="D11"></button>
+                        <button class="seat seat-sold" data-seat="D12"></button>
+                        <button class="seat seat-available" data-seat="D13"></button>
+                        <button class="seat seat-available" data-seat="D14"></button>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-label">E</div>
+                        <button class="seat seat-available" data-seat="E1"></button>
+                        <button class="seat seat-available" data-seat="E2"></button>
+                        <button class="seat seat-available" data-seat="E3"></button>
+                        <button class="seat seat-sold" data-seat="E4"></button>
+                        <button class="seat seat-available" data-seat="E5"></button>
+                        <button class="seat seat-available" data-seat="E6"></button>
+                        <button class="seat seat-available" data-seat="E7"></button>
+                        <div class="gap"></div>
+                        <button class="seat seat-available" data-seat="E8"></button>
+                        <button class="seat seat-available" data-seat="E9"></button>
+                        <button class="seat seat-available" data-seat="E10"></button>
+                        <button class="seat seat-available" data-seat="E11"></button>
+                        <button class="seat seat-available" data-seat="E12"></button>
+                        <button class="seat seat-available" data-seat="E13"></button>
+                        <button class="seat seat-available" data-seat="E14"></button>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-label">F</div>
+                        <button class="seat seat-available" data-seat="F1"></button>
+                        <button class="seat seat-available" data-seat="F2"></button>
+                        <button class="seat seat-available" data-seat="F3"></button>
+                        <button class="seat seat-available" data-seat="F4"></button>
+                        <button class="seat seat-available" data-seat="F5"></button>
+                        <button class="seat seat-available" data-seat="F6"></button>
+                        <button class="seat seat-available" data-seat="F7"></button>
+                        <div class="gap"></div>
+                        <button class="seat seat-available" data-seat="F8"></button>
+                        <button class="seat seat-available" data-seat="F9"></button>
+                        <button class="seat seat-love" data-seat="F10"></button>
+                        <button class="seat seat-love" data-seat="F11"></button>
+                        <button class="seat seat-available" data-seat="F12"></button>
+                        <button class="seat seat-sold" data-seat="F13"></button>
+                        <button class="seat seat-available" data-seat="F14"></button>
+                    </div>
+
+                    <div class="row">
+                        <div class="row-label">G</div>
+                        <button class="seat seat-available" data-seat="G1"></button>
+                        <button class="seat seat-available" data-seat="G2"></button>
+                        <button class="seat seat-sold" data-seat="G3"></button>
+                        <button class="seat seat-available" data-seat="G4"></button>
+                        <button class="seat seat-available" data-seat="G5"></button>
+                        <button class="seat seat-available" data-seat="G6"></button>
+                        <button class="seat seat-available" data-seat="G7"></button>
+                        <div class="gap"></div>
+                        <button class="seat seat-available" data-seat="G8"></button>
+                        <button class="seat seat-available" data-seat="G9"></button>
+                        <button class="seat seat-available" data-seat="G10"></button>
+                        <button class="seat seat-available" data-seat="G11"></button>
+                        <button class="seat seat-available" data-seat="G12"></button>
+                        <button class="seat seat-available" data-seat="G13"></button>
+                        <button class="seat seat-available" data-seat="G14"></button>
+                    </div>
+                    
+                </div>
+                <div class="seat-numbers">
+                    <div class="seat-number"></div>
+                    <div class="seat-number">1</div>
+                    <div class="seat-number">2</div>
+                    <div class="seat-number">3</div>
+                    <div class="seat-number">4</div>
+                    <div class="seat-number">5</div>
+                    <div class="seat-number">6</div>
+                    <div class="seat-number">7</div>
+                    <div class="gap"></div>
+                    <div class="seat-number">8</div>
+                    <div class="seat-number">9</div>
+                    <div class="seat-number">10</div>
+                    <div class="seat-number">11</div>
+                    <div class="seat-number">12</div>
+                    <div class="seat-number">13</div>
+                    <div class="seat-number">14</div>
+                </div>
+
+
+                <div class="seating-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #e9ecef; border: 2px solid #dee2e6;"></div>
+                        <span>Available</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #4285f4;"></div>
+                        <span>Selected</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #ff69b4;"></div>
+                        <span>Love seat</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #6c757d;"></div>
+                        <span>Sold</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="cinema-info">
+                <img src="/asset/sponsor/CineOne21 2.svg 2.svg" alt="CineOne21">
+                <p style="color: #666; margin-bottom: 20px;">CineOne21 Cinema</p>
+
+                <div class="info-row">
+                    <span class="info-label">Movie selected</span>
+                    <span class="info-value">Spider-Man: Homecoming</span>
+                </div>
+
+                <div class="info-row">
+                    <span class="info-label">Tuesday, 07 July 2020</span>
+                    <span class="info-value">13:00pm</span>
+                </div>
+
+                <div class="info-row">
+                    <span class="info-label">One ticket price</span>
+                    <span class="info-value">$10</span>
+                </div>
+
+                <div class="info-row">
+                    <span class="info-label">Seat choosed</span>
+                    <span class="info-value">C4, C5, C6</span>
+                </div>
+
+                <div class="total-section">
+                    <div class="info-row">
+                        <span class="info-label"><strong>Total Payment</strong></span>
+                        <span class="total-amount">$30</span>
+                    </div>
+                </div>
+
+                <a href="/index/modalTailwind.html"><button class="checkout-btn">Checkout now</button></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="/asset/icon/tickitz-blu.svg" alt="logo tickitz">
+                </div>
+                <p class="footer-description">Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Cinemas</a></li>
+                    <li><a href="#">Movies List</a></li>
+                    <li><a href="#">My Ticket</a></li>
+                    <li><a href="#">Notification</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Our Sponsor</h3>
+                <div class="ebv-logo">
+                    <img src="/asset/sponsor/ebv.id 2.svg" alt="Logo ebv">
+                </div>
+                <div class="cineone21-logo">
+                    <img src="/asset/sponsor/CineOne21 2.svg" alt="CineOne21">
+                </div>
+                <div>
+                    <img src="/asset/sponsor/hiflix 2.svg" alt="hiflix">
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><img src="/asset/icon/eva_facebook-outline.svg" alt="facebook">Tickitz Cinema id</li>
+                    <li><img src="/asset/icon/bx_bxl-instagram.svg" alt="instagram">tickitz.id</li>
+                    <li><img src="/asset/icon/eva_twitter-outline.svg" alt="twitter">tickitz.id</li>
+                    <li><img src="/asset/icon/feather_youtube.svg" alt="youtube">Tickitz Cinema Id</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2020 Tickitz. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
