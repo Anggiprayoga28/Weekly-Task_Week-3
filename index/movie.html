@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/Style/movie.css" />
+    <script src="/javascript/movie.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- Logo Tickitz -->
+        <div class="navbar-brand">
+          <a href="/index/index.html">
+            <img
+              class="logo-color"
+              src="/asset/icon/tickitz-blu.svg"
+              alt="logo-tickitz"
+            />
+          </a>
+        </div>
+
+        <!-- Nav menu in the middle -->
+        <div class="navbar-menu">
+          <ul>
+            <li><a href="/index/index.html">Home</a></li>
+            <li><a href="/index/movie.html">Movie</a></li>
+            <li><a href="/index/detail.html">Buy Ticket</a></li>
+          </ul>
+        </div>
+
+        <!-- Auth Button in Right -->
+        <div class="navbar-auth">
+          <a href="/index/login.html" class="btn btn-outline">Sign in</a>
+          <a href="/index/register.html" class="btn btn-primary">Sign Up</a>
+        </div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <span class="hero-label">LIST MOVIE OF THE WEEK</span>
+          <h1 class="hero-title">
+            Experience the Magic of Cinema: Book Your Tickets Today
+          </h1>
+          <div class="hero-pagination">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="search-section">
+            <div class="search-container">
+              <label class="search-label">Cari Event</label>
+              <div class="search-icon">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14 14L11.1 11.1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <input
+                type="text"
+                class="search-input"
+                placeholder="New Born Expert"
+              />
+            </div>
+
+            <div class="filter-section">
+              <!-- <label class="search-label">Filter</label> -->
+              <span class="filter-label">Filter</span>
+
+              <div class="filter-tags">
+                <button class="filter-tag active">Thriller</button>
+                <button class="filter-tag">Horror</button>
+                <button class="filter-tag">Romantic</button>
+                <button class="filter-tag">Adventure</button>
+                <button class="filter-tag">Sci-Fi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- movie grid -->
+      <section class="movie-section-container">
+        <div class="movie-grid"></div>
+      </section>
+      <!-- newsletter section -->
+      <section class="newsletter-section">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h1>Subscribe to our newsletter</h1>
+            <form class="form-group">
+              <input
+                type="text"
+                placeholder="First Name"
+                aria-label="First Name"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                aria-label="Email Address"
+              />
+              <button type="submit">Subscribe Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--  footer -->
+      <footer>
+        <div class="footer-container">
+          <section class="footer-section">
+            <div class="logo">
+              <img src="/asset/icon/tickitz-blu.svg" alt="tickitz footer" />
+            </div>
+            <p class="tagline">
+              Stop waiting in line. Buy tickets conveniently, watch movies
+              quietly.
+            </p>
+          </section>
+
+          <section class="footer-section">
+            <h3>Explore</h3>
+            <nav class="nav-links">
+              <a href="#">Cinemas</a>
+              <a href="#">Movies List</a>
+              <a href="#">My Ticket</a>
+              <a href="#">Notification</a>
+            </nav>
+          </section>
+
+          <section class="footer-section">
+            <h3>Our Sponsor</h3>
+            <div class="sponsors">
+              <div class="sponsor-logo">
+                <img src="/asset/sponsor/ebv.id 2.svg" alt="ebu-id" />
+              </div>
+              <div class="sponsor-logo">
+                <img src="/asset/sponsor/CineOne21 2.svg" alt="cineone" />
+              </div>
+              <div class="sponsor-logo">
+                <img src="/asset/sponsor/hiflix 2.svg" alt="hiflix" />
+              </div>
+            </div>
+          </section>
+
+          <section class="footer-section">
+            <h3>Follow us</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <img src="/asset/icon/eva_facebook-outline.svg" alt="facebook" />
+                Tickitz Cinema id
+              </a>
+              <a href="#" class="social-link">
+                <img src="/asset/icon/bx_bxl-instagram.svg" alt="instagram" />
+                tickitz.id
+              </a>
+              <a href="#" class="social-link">
+                <img src="/asset/icon/eva_twitter-outline.svg" alt="twitter" />
+                tickitz.id
+              </a>
+              <a href="#" class="social-link">
+                <img src="/asset/icon/feather_youtube.svg" alt="youtube" />
+                Tickitz Cinema id
+              </a>
+            </div>
+          </section>
+        </div>
+        <div class="copyright">© 2020 Tickitz. All Rights Reserved.</div>
+      </footer>
+    </main>
+  </body>
+</html>
