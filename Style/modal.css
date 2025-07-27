@@ -1,0 +1,20 @@
+@keyframes slide-in {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in {
+    animation: slide-in 0.3s ease-out;
+}
+
+.payment-method.selected {
+    border-color: #1d4ed8 !important;
+    background-color: rgba(29, 78, 216, 0.1) !important;
+}
